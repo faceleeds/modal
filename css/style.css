@@ -1,0 +1,178 @@
+* {
+  box-sizing: border-box;
+}
+
+/* Modal Banner*/
+
+#myImg {
+    cursor: pointer;
+
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 999; /* Sit on top */
+    padding-top: 300px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgba(0, 0, 0, 0.6);
+
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    -webkit-animation: fadeInFromNone 0.5s ease-out;
+    -moz-animation: fadeInFromNone 0.5s ease-out;
+    -o-animation: fadeInFromNone 0.5s ease-out;
+    animation: fadeInFromNone 0.5s ease-out;
+    width: 70%;
+    max-width: 1300px;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 1);
+    border-radius: 2px;
+    border-bottom: none;
+}
+
+/* Caption of Modal Image */
+.btn__banner {
+    text-decoration: none;
+    margin: auto;
+    display: block;
+    width: 70%;
+    max-width: 1300px;
+    text-align: center;
+    color: #ccc;
+    padding: 30px 0;
+    background-color: #fff;
+    border: 2px solid #000000;
+    box-shadow: 0px 0px 30px 0px rgba(2, 2, 2, 1);
+    border-radius: 2px;
+    border-top: none;
+}
+
+/*.btn__link {*/
+/*    text-decoration: none;*/
+/*    padding: 10px 22px;*/
+/*    border-radius: 20px;*/
+/*    font: 14px/32px "Montserrat";*/
+/*    border-color: transparent;*/
+/*    background: linear-gradient(254deg, #ffdc5d, #fbc937);*/
+/*    color: #000;*/
+/*}*/
+
+/* Add Animation */
+.modal-content,
+.btn,
+#caption {
+    -webkit-animation: fadeInFromNone .5s ease-out;
+    -moz-animation: fadeInFromNone .5s ease-out;
+    -o-animation: fadeInFromNone .5s ease-out;
+    animation: fadeInFromNone .5s ease-out;
+}
+
+@-webkit-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@-o-keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInFromNone {
+    0% {
+        display: none;
+        opacity: 0;
+    }
+
+    1% {
+        display: block;
+        opacity: 0;
+    }
+
+    100% {
+        display: block;
+        opacity: 1;
+    }
+}
+
+/* The Close Button */
+.close, .close__LT {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #f1f1f1;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus{
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.close__LT:hover,
+.close__LT:focus {
+    color: #bbb;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px) {
+    .modal-content {
+        width: 100%;
+    }
+}

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/slick.css" />
+    <link rel="stylesheet" href="css/jquery.fancybox.css" />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+
+
+
+    
+
+
+  <button class="btn">
+    <a href="#">Modal One</a>
+  </button>
+
+  <div id="modalES" class="modal">
+    <span class="close">×</span>
+    <img class="modal-content" src="/images/banner.jpg">
+    <div class="btn__banner">
+        <a  href="https://www.facebook.com/" class="button btn__link button_color_orange">Modal ES</a>
+    </div>
+</div>
+
+<div id="modalLT" class="modal">
+    <span class="close__LT">×</span>
+    <img class="modal-content" src="/images/banner.jpg">
+    <div class="btn__banner">
+        <a class="button btn__link button_color_orange">Modal LT</a>
+    </div>
+</div>
+
+  <p id="demo"></p>
+
+  <script>
+    document.getElementById("demo").innerHTML = 
+    "Page URL:<br>" + window.location.href;
+    </script>
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
